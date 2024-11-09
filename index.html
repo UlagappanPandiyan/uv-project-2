@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroCart - ECommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ElectroCart</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for products...">
+        </div>
+        <div class="nav-links">
+            <a href="#">Cart (<span id="cart-count">0</span>)</a>
+            <a href="#" id="loginLink">Login</a>
+            <a href="#" id="registerLink">Register</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="products">
+            <!-- Products will be injected here via JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ElectroCart. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" id="aboutUsLink">About Us</a>
+            <a href="#" id="contactUsLink">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- Contact Us Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeContactModal">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Email: support@electrocart.com</p>
+            <p>Phone: +91 8610077283</p>
+            <p>Address: Kothamangalam, Sivagangai</p>
+        </div>
+    </div>
+
+    <!-- About Us Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAboutModal">&times;</span>
+            <h2>About Us</h2>
+            <p>We are ElectroCart, offering the best electronics at unbeatable prices.</p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegisterModal">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="registerUsername" placeholder="Username" required>
+                <input type="password" id="registerPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
